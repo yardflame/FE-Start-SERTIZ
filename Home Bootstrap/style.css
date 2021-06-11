@@ -1,0 +1,109 @@
+.site {
+	max-width: 1280px;
+	margin: 0 auto;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	padding: 5rem 0;
+}
+.header {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.head_title {
+	font-size: 1.2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 4rem;
+	flex-basis: 100%;
+}
+.head_subtitle {
+	font-weight: 300;
+	flex-basis: 100%;
+	padding-bottom: 2.5rem;
+}
+.line {
+	width: 4rem;
+	border-bottom: 3px solid #f1ad1d;
+}
+.my_btn_style {
+    border: 1px solid;
+	border-radius: 1px;
+	padding: 0.3rem 2rem;
+}
+.my_btn_style:hover {
+	color: #f1ad1d;
+    background-color: #333333;
+}
+.menu {
+	padding-top: 2.5rem;
+}
+.menu ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+.menu ul li {
+	padding-right: 0.8rem;
+}
+.container_card {
+	padding-top: 2rem;
+}
+.flipcard {
+	position: relative;
+	max-width: 281px;
+	height: 271px;
+	perspective: 500px;
+	margin: 7px;
+}
+.flipcard .front img {
+	width: 100%;
+	height: 100%;
+}
+.flipcard:hover .front {
+	transform: rotateY(180deg);
+}
+.flipcard:hover .back {
+	transform: rotateY(0deg);
+}
+
+.flipcard .front,
+.flipcard .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: all 0.5s linear;
+	backface-visibility: hidden;
+    border: 2px solid;
+}
+.flipcard .back {
+	transform: rotateY(-180deg);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-around;
+	text-align: center;
+}
+.flipcard .back .back_title,
+.flipcard .back .back_text,
+.flipcard .back .back_more {
+	flex-basis: 100%;
+}
+.flipcard .back .back_title {
+	font-weight: 700;
+}
+.flipcard .back .back_text {
+	font-weight: 300;
+}
+.flipcard .back .btn_style {
+    background-color: #f1ad1d;
+    width: 140px;
+	border-radius: 1px;
+	color: white;
+	font-weight: 700;
+    font-size: 14px;
+    height: 40px;
+}
